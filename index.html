@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<!--Back Button Script-->
+<script>
+$(document).ready(function(){
+	$('.back').click(function(){
+		parent.history.back();
+		return false;
+	});
+});
+</script>
+<!--/Back Button Script-->
+
+</head>
+<body>
+
+<div data-role="page" id="home">
+  <div data-role="header">
+    <a href="#home" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
+    <h1>Welcome Habib!</h1>
+	<a href="#" class="back ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left">Back</a>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <p>Welcome! Messaging has never been more secure. Chat with friends in this secure app.</p>
+    <a href="#new_message" class="ui-btn ui-icon-lock ui-btn-icon-left" data-transition="slide" >New Message</a>
+	<a href="#read_messages" class="ui-btn ui-icon-alert ui-btn-icon-left" data-transition="slide" >Read Messages</a>
+	<a href="#friends" class="ui-btn ui-icon-info ui-btn-icon-left" data-transition="slide" >Add/Edit Friend</a>	
+	<a href="#profile" class="ui-btn ui-icon-grid ui-btn-icon-left" data-transition="slide" >View Profile</a>	
+  </div>
+
+  <div data-role="footer">
+    <h1>Secure Messaging takes no responsibility for any messages that are sent over the secure network.</h1>
+  </div>
+</div> 
+
+<!--PAGE TWO-->
+
+<div data-role="page" id="new_message">
+  <div data-role="header">
+    <a href="#home" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
+    <h1>Contacts</h1>
+	<a href="#" class="back ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left">Back</a>
+  </div>
+
+   <div data-role="main" class="ui-content">
+    <form method="post" action="">
+      <fieldset class="ui-field-contain">
+        <label for="day">To:</label>
+        <select name="day" id="day">
+          <option value="mon">Bill</option>
+          <option value="tue">Kristen</option>
+          <option value="wed">Frank</option>
+          <option value="thu">Jessica</option>
+          <option value="fri">Sally</option>
+          <option value="sat">Mike</option>
+          <option value="sun">Tina</option>
+        </select>
+      </fieldset>
+    </form>
+	
+    <form method="post" action="demoform.asp">
+      <div class="ui-field-contain">
+        <textarea name="addinfo" id="info"></textarea>
+      </div>
+      <input type="submit" data-inline="true" value="Submit">
+    </form> 
+    <p><b>Note:</b> Any messages sent will be sent via secure socket.</p>
+  </div>
+
+  <div data-role="footer">
+    <h1>Secure Messaging takes no responsibility for any messages that are sent over the secure network.</h1>
+  </div>
+</div> 
+
+<!--PAGE THREE-->
+
+<div data-role="page" id="read_messages">
+  <div data-role="header">
+    <a href="#home" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
+    <h1>Recent Messages</h1>
+	<a href="#" class="back ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left">Back</a>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <h2>Messages</h2>
+    <ul data-role="listview" data-inset="true">
+      <li>
+        <a href="#">
+        <img src="http://api.randomuser.me/portraits/thumb/men/32.jpg">
+        <h2><strong>From:</strong> Mike InsideTrader</h2>
+        <p>Stocks just went up! Sell now.</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+        <img src="http://api.randomuser.me/portraits/thumb/women/39.jpg">
+        <h2><strong>From:</strong> Lisa Lover</h2>
+        <p>Are we still on for tonight. I hope your wife never finds out!</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+  <div data-role="footer">
+    <h1>Secure Messaging takes no responsibility for any messages that are sent over the secure network.</h1>
+  </div>
+</div> 
+  
+  <!--PAGE FOUR-->
+  
+<div data-role="page" id="friends">
+  <div data-role="header">
+    <a href="#home" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
+    <h1>New Message</h1>
+	<a href="#" class="back ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left">Back</a>
+  </div>
+
+   <div data-role="main" class="ui-content">
+	  <div data-role="main" class="ui-content">
+		<h2>Friends:</h2>
+		<ul data-role="listview" data-inset="true">
+		  <li>
+			<a href="#"><img src="http://api.randomuser.me/portraits/thumb/men/27.jpg"></a>
+		  </li>
+		  <li>
+			<a href="#"><img src="http://api.randomuser.me/portraits/thumb/women/39.jpg"></a>
+		  </li>
+		  <li>
+			<a href="#"><img src="http://api.randomuser.me/portraits/thumb/women/58.jpg"></a>
+		  </li>
+		  <li>
+			<a href="#"><img src="http://api.randomuser.me/portraits/thumb/men/52.jpg"></a>
+		  </li>
+		</ul>
+	  </div>
+	  
+	  <a href="#add_user" class="back ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left">Add Friend</a>
+	  
+  </div>
+  
+  
+
+  <div data-role="footer">
+    <h1>Secure Messaging takes no responsibility for any messages that are sent over the secure network.</h1>
+  </div>
+</div> 
+
+<!--ADD FRIEND PAGE-->
+
+<div data-role="page" id="profile">
+  <div data-role="header">
+    <a href="#home" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
+    <h1>New Message</h1>
+	<a href="#" class="back ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left">Back</a>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <h2>Habibs's Profile</h2>
+    <ul data-role="listview" data-inset="true">
+      <li>
+        <a href="#">
+        <img src="http://api.randomuser.me/portraits/thumb/men/42.jpg">
+        <h2>Habib Hopitosh</h2>
+        <p>Software Engineer for Microsoft</p>
+        </a>
+      </li>
+    </ul>
+	<form method="post" action="demoform.asp">
+	<div class="ui-field-contain">
+        <label for="fullname">Full name:</label>
+        <input type="text" name="fullname" id="fullname">       
+        <label for="bday">Date of Birth:</label>
+        <input type="date" name="bday" id="bday">
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" placeholder="Your email..">
+      </div>
+      <input type="submit" data-inline="true" value="Submit">
+    </form>
+	</div>
+  </div>
+
+  <div data-role="footer">
+    <h1>Secure Messaging takes no responsibility for any messages that are sent over the secure network.</h1>
+  </div>
+</div> 
+
+</body>
+</html>
