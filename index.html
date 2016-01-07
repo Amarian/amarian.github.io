@@ -3,6 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" type="text/css" href="myCss.css">
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
@@ -21,22 +22,28 @@ $(document).ready(function(){
 <body>
 
 <div data-role="page" id="home">
-  <div data-role="header">
+  <div data-role="header" class="ui-header">
     <a href="#home" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
     <h1>Welcome Habib!</h1>
 	<a href="#" class="back ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left">Back</a>
   </div>
-
+    
   <div data-role="main" class="ui-content">
     <p>Welcome! Messaging has never been more secure. Chat with friends in this secure app.</p>
     <a href="#new_message" class="ui-btn ui-icon-lock ui-btn-icon-left" data-transition="slide" >New Message</a>
 	<a href="#read_messages" class="ui-btn ui-icon-alert ui-btn-icon-left" data-transition="slide" >Read Messages</a>
 	<a href="#friends" class="ui-btn ui-icon-info ui-btn-icon-left" data-transition="slide" >Add/Edit Friend</a>	
 	<a href="#profile" class="ui-btn ui-icon-grid ui-btn-icon-left" data-transition="slide" >View Profile</a>	
+	<a href="#myPanel" class="ui-btn ui-icon-grid ui-btn-icon-left">View Panel</a>
   </div>
+  
+<div data-role="panel" id="myPanel"> 
+    <h2>Hi</h2>
+    <p>This is a panel.</p>
+</div>
 
   <div data-role="footer">
-    <h1>Secure Messaging takes no responsibility for any messages that are sent over the secure network.</h1>
+    <h1>&#169 SecureMessaging</h1>
   </div>
 </div> 
 
@@ -75,7 +82,7 @@ $(document).ready(function(){
   </div>
 
   <div data-role="footer">
-    <h1>Secure Messaging takes no responsibility for any messages that are sent over the secure network.</h1>
+    <h1>&#169 SecureMessaging</h1>
   </div>
 </div> 
 
@@ -109,7 +116,7 @@ $(document).ready(function(){
   </div>
   
   <div data-role="footer">
-    <h1>Secure Messaging takes no responsibility for any messages that are sent over the secure network.</h1>
+    <h1>&#169 SecureMessaging</h1>
   </div>
 </div> 
   
@@ -148,7 +155,7 @@ $(document).ready(function(){
   
 
   <div data-role="footer">
-    <h1>Secure Messaging takes no responsibility for any messages that are sent over the secure network.</h1>
+    <h1>&#169 SecureMessaging</h1>
   </div>
 </div> 
 
@@ -187,7 +194,7 @@ $(document).ready(function(){
   </div>
 
   <div data-role="footer">
-    <h1>Secure Messaging takes no responsibility for any messages that are sent over the secure network.</h1>
+    <h1>&#169 SecureMessaging</h1>
   </div>
 </div> 
 
