@@ -6,3 +6,19 @@
 	border-radius: 10px !important;
 }
 
+.member {
+	font-size: 12px;
+	float: left;
+}
+
+.forgotPassword {
+	font-size: 12px;
+	float: right;
+}
+
+.logo {
+	display: block;
+	top: 0; bottom:0; left: 0; right:0;
+    margin: auto;
+}
+

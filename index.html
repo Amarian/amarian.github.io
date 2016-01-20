@@ -21,11 +21,68 @@ $(document).ready(function(){
 </head>
 <body>
 
+<!--WELCOME PAGE-->
+
+<div data-role="page" id="welcome">
+  <div data-role="header" class="ui-header">
+    <a href="#home" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Register</a>	
+	<a href="#" class="back ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left">Log In</a>
+  </div>
+  
+	
+	
+    
+  <div data-role="main" class="ui-content">
+	<img src="http://i284.photobucket.com/albums/ll31/raymondhughes1/logo_zpsxiiw6fev.png" class="logo" alt="Logo"/>
+    <form method="post" action="">
+      <div class="ui-field-contain">
+        <label for="userName">User Name:</label>
+        <input type="text" name="userName" id="userName">       
+        <label for="fullName">Full Name:</label>
+        <input type="date" name="fullName" id="fullName">
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" placeholder="Your email..">
+      </div>
+      <input type="submit" data-inline="true" value="Submit">
+    </form>
+	<div class="member">
+		<a href="#logIn">Already a member</a>
+	</div>
+	<div class="forgotPassword">
+		<a href="">Forgot Password</a>
+	</div>
+  </div>
+
+  <div data-role="footer">
+    <h1>&#169 SecureMessaging</h1>
+  </div>
+</div> 
+
+<!--LogIn Page-->
+
+<div data-role="page" id="logIn">
+  <div data-role="header" class="ui-header">
+    <a href="#home" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
+    <h1>Welcome Habib!</h1>
+	<a href="#" class="back ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left">Log Out</a>
+  </div>
+    
+  <div data-role="main" class="ui-content">
+    <p>Welcome! Messaging has never been more secure. Chat with friends in this secure app.</p>
+  </div>
+
+  <div data-role="footer">
+    <h1>&#169 SecureMessaging</h1>
+  </div>
+</div> 
+
+<!--Home Page-->
+
 <div data-role="page" id="home">
   <div data-role="header" class="ui-header">
     <a href="#home" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
     <h1>Welcome Habib!</h1>
-	<a href="#" class="back ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left">Back</a>
+	<a href="#" class="back ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left">Log Out</a>
   </div>
     
   <div data-role="main" class="ui-content">
@@ -53,7 +110,7 @@ $(document).ready(function(){
   <div data-role="header">
     <a href="#home" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
     <h1>Contacts</h1>
-	<a href="#" class="back ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left">Back</a>
+	<a href="#" class="back ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left">Log Out</a>
   </div>
 
    <div data-role="main" class="ui-content">
@@ -72,7 +129,7 @@ $(document).ready(function(){
       </fieldset>
     </form>
 	
-    <form method="post" action="demoform.asp">
+    <form method="post" action="">
       <div class="ui-field-contain">
         <textarea name="addinfo" id="info"></textarea>
       </div>
@@ -92,7 +149,7 @@ $(document).ready(function(){
   <div data-role="header">
     <a href="#home" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
     <h1>Recent Messages</h1>
-	<a href="#" class="back ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left">Back</a>
+	<a href="#" class="back ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left">Log Out</a>
   </div>
 
   <div data-role="main" class="ui-content">
@@ -126,7 +183,7 @@ $(document).ready(function(){
   <div data-role="header">
     <a href="#home" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
     <h1>New Message</h1>
-	<a href="#" class="back ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left">Back</a>
+	<a href="#" class="back ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left">Log Out</a>
   </div>
 
    <div data-role="main" class="ui-content">
@@ -165,7 +222,7 @@ $(document).ready(function(){
   <div data-role="header">
     <a href="#home" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
     <h1>New Message</h1>
-	<a href="#" class="back ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left">Back</a>
+	<a href="#" class="back ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left">Log Out</a>
   </div>
 
   <div data-role="main" class="ui-content">
